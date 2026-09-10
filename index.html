@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إلى شهد، بكل صدق</title>
+<meta name="theme-color" content="#07091A">
+<meta name="description" content="مساحة صغيرة صُمِّمت خصيصاً لأجل شهد">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'self'; object-src 'none'">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2307091A'/%3E%3Cpath d='M32 48S12 36 12 23c0-6 4-11 10-11 4 0 8 2 10 6 2-4 6-6 10-6 6 0 10 5 10 11 0 13-20 25-20 25Z' fill='%238BA8D0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Marhey:wght@500&family=Great+Vibes&family=DM+Sans:wght@300;400&family=Amiri:wght@400;700&family=Alex+Brush&family=Parisienne&family=Allura&family=Tangerine:wght@400;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="parallax-bg" id="parallaxBg"></div>
+<canvas id="petal-canvas"></canvas>
+<div class="page-transition" id="pageTransition"></div>
+
+<!-- NAV -->
+<nav class="site-nav" id="siteNav">
+  <div class="nav-brand">For Shahad</div>
+  <button class="nav-back" id="navBack" aria-label="العودة إلى بداية الرسالة">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    إعادة الرسالة
+  </button>
+</nav>
+
+<!-- ══════════════ LANDING ══════════════ -->
+<div id="landing">
+  <p class="landing-eyebrow">a little world, made for you</p>
+  <div class="landing-flower">
+    <svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="4"/><ellipse cx="18" cy="8" rx="2.5" ry="5"/><ellipse cx="18" cy="28" rx="2.5" ry="5"/><ellipse cx="8" cy="18" rx="5" ry="2.5"/><ellipse cx="28" cy="18" rx="5" ry="2.5"/><ellipse cx="11" cy="11" rx="2.5" ry="5" transform="rotate(-45 11 11)"/><ellipse cx="25" cy="25" rx="2.5" ry="5" transform="rotate(-45 25 25)"/><ellipse cx="25" cy="11" rx="2.5" ry="5" transform="rotate(45 25 11)"/><ellipse cx="11" cy="25" rx="2.5" ry="5" transform="rotate(45 11 25)"/></svg>
+  </div>
+  <h1 class="landing-title">For Shahad</h1>
+  <p class="landing-arabic">شهد</p>
+  <p class="landing-sub">مساحة صغيرة صُمِّمت خصيصاً لأجلكِ</p>
+  <button class="enter-btn" id="enterBtn" aria-label="دخول الرسالة">ادخلي ♡</button>
+</div>
+
+<!-- ══════════════ MAIN ══════════════ -->
+<div id="main">
+
+  <!-- HERO -->
+  <div class="hero-main section-fade">
+    <p class="eyebrow">a softer place to land</p>
+    <h1>between a feeling<br>and a confession</h1>
+    <p class="subtitle">كل ما هنا كُتب بصدق، لأن بعض المشاعر تستحق أن تُقال.</p>
+  </div>
+
+  <!-- INTERLUDE 1 -->
+  <div class="interlude section-fade">
+    <p class="interlude-en">"some people arrive and make<br>such a beautiful impact on your life"</p>
+    <p class="interlude-ar">بعض الناس يصلون ويتركون أثراً لا يُمحى</p>
+  </div>
+
+  <!-- LETTER -->
+  <div class="section section-fade">
+    <div class="letter-card">
+      <p class="letter-card-label">to Shahad — إلى شهد</p>
+      <h2 class="letter-card-title">يا شهد</h2>
+      <div class="letter-body">
+        <p>لم أعرف كيف أبدأ، لكن الصمت بدا أصعب من أن أقول ما أشعر به.</p>
+        <p>لفتني هدوؤكِ، واحترامكِ، وتركيزكِ على ما تريدين. حضوركِ يجعل المكان أهدأ.</p>
+        <p>لا تجمعنا ذكريات كثيرة، لكن هذا الشعور كان صادقاً بما يكفي ليُكتب لأجلكِ.</p>
+      </div>
+      <div class="letter-card-seal" aria-hidden="true"><svg class="icon-sparkle" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l2.4 8.6L23 12l-8.6 2.4L12 23l-2.4-8.6L1 12l8.6-2.4L12 1z"/></svg></div>
+    </div>
+  </div>
+
+  <!-- FIRST IMPRESSION -->
+  <div class="section personal-section section-fade">
+    <div class="chapter-header"><h2>First impression</h2><p>أول شيء لاحظته فيكِ</p></div>
+    <div class="impression-card">
+      <p class="chapter-kicker">THE FIRST THING I NOTICED</p>
+      <blockquote>أنكِ هادئة ومحترمة بطريقة لا تحتاج إلى أن تثبت نفسها؛ حضوركِ يقول الكثير، حتى حين تختارين الصمت.</blockquote>
+    </div>
+  </div>
+
+  <!-- SMALL DETAILS -->
+  <div class="section personal-section section-fade">
+    <div class="chapter-header"><h2>The little things</h2><p>تفاصيل صغيرة، لكنها لا تمرّ دون أثر</p></div>
+    <div class="details-grid">
+      <article class="detail-card"><div class="detail-icon"><svg class="icon-sparkle" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l2.4 8.6L23 12l-8.6 2.4L12 23l-2.4-8.6L1 12l8.6-2.4L12 1z"/></svg></div><h3>احترامكِ</h3><p>يظهر في طريقتكِ مع الناس، ببساطة وبدون تكلّف.</p></article>
+      <article class="detail-card"><div class="detail-icon"><svg class="icon-sparkle" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l2.4 8.6L23 12l-8.6 2.4L12 23l-2.4-8.6L1 12l8.6-2.4L12 1z"/></svg></div><h3>ذكاؤكِ</h3><p>ليس مجرد معرفة، بل فهم هادئ ونظرة مختلفة للأشياء.</p></article>
+      <article class="detail-card"><div class="detail-icon"><svg class="icon-sparkle" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l2.4 8.6L23 12l-8.6 2.4L12 23l-2.4-8.6L1 12l8.6-2.4L12 1z"/></svg></div><h3>هدوؤكِ وثقافتكِ</h3><p>مزيج نادر يجعل الحديث معكِ يحمل قيمة وراحة.</p></article>
+    </div>
+  </div>
+
+  <!-- DIVIDER -->
+  <div class="divider section-fade">
+    <div class="divider-line"></div>
+    <span class="divider-icon"><svg class="icon-sparkle" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l2.4 8.6L23 12l-8.6 2.4L12 23l-2.4-8.6L1 12l8.6-2.4L12 1z"/></svg></span>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- INTERLUDE 2 -->
+  <div class="interlude section-fade">
+    <p class="interlude-en">"quietly, she became everything"</p>
+    <p class="interlude-ar">بهدوء، أصبح وجودكِ يُغيّر شيئاً في الهواء</p>
+  </div>
+
+  <!-- REASONS -->
+  <div class="section section-fade">
+    <div class="reasons-wrapper">
+      <div class="reasons-header">
+        <h2 class="en-title">Reasons why you're special to me</h2>
+        <p class="ar-sub">لماذا أنتِ مميزة — من وجهة نظري</p>
+      </div>
+      <div class="reasons-outer">
+        <div class="reasons-inner">
+          <p class="reason-number" id="reasonNum">01 / 06</p>
+          <p class="reason-text show" id="reasonText">لأنكِ هادئة بطريقة تجعل من حولكِ يشعرون بالأمان، هدوءكِ ليس غياباً بل حضور من نوع مختلف.</p>
+        </div>
+        <div class="reasons-nav">
+          <button class="reason-arrow" id="prevReason" aria-label="السابق">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="reason-dots" id="reasonDots" role="group" aria-label="اختيار سبب"></div>
+          <button class="reason-arrow" id="nextReason" aria-label="التالي">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IF YOU WERE -->
+  <div class="section personal-section section-fade">
+    <div class="chapter-header"><h2>If you were…</h2><p>لو كنتِ شيئاً، فماذا ستكونين في نظري؟</p></div>
+    <div class="identity-panel">
+      <div class="identity-options" role="group" aria-label="اختاري وصفاً">
+        <button class="identity-option" type="button" data-identity="color">لوناً</button>
+        <button class="identity-option" type="button" data-identity="song">أغنية</button>
+        <button class="identity-option" type="button" data-identity="season">فصلاً</button>
+        <button class="identity-option" type="button" data-identity="place">مكاناً</button>
+      </div>
+      <p class="identity-answer" id="identityAnswer" aria-live="polite">اختاري كلمة لتظهر الإجابة.</p>
+    </div>
+  </div>
+
+  <!-- MEMORY BOX -->
+  <div class="section personal-section section-fade">
+    <div class="chapter-header"><h2>A small memory box</h2><p>أشياء أريد أن تبقى هنا</p></div>
+    <div class="memory-grid">
+      <button class="memory-card" type="button" aria-expanded="false"><div class="detail-icon"><svg class="icon-sparkle" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l2.4 8.6L23 12l-8.6 2.4L12 23l-2.4-8.6L1 12l8.6-2.4L12 1z"/></svg></div><h3>هدوء</h3><p>في عالمٍ مستعجل، هدوؤكِ يذكّر بأن الرقي لا يحتاج ضجيجاً.</p></button>
+      <button class="memory-card" type="button" aria-expanded="false"><div class="detail-icon"><svg class="icon-sparkle" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l2.4 8.6L23 12l-8.6 2.4L12 23l-2.4-8.6L1 12l8.6-2.4L12 1z"/></svg></div><h3>كلمة طيبة</h3><p>أحياناً لا تبقى الكلمة نفسها، لكن يبقى الأثر الجميل الذي تتركه.</p></button>
+      <button class="memory-card" type="button" aria-expanded="false"><div class="detail-icon"><svg class="icon-sparkle" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l2.4 8.6L23 12l-8.6 2.4L12 23l-2.4-8.6L1 12l8.6-2.4L12 1z"/></svg></div><h3>تقدير</h3><p>هذه الصفحة محاولة صغيرة لتقدير الصفات الجميلة التي رأيتها فيكِ.</p></button>
+    </div>
+  </div>
+
+  <!-- DIVIDER -->
+  <div class="divider section-fade">
+    <div class="divider-line"></div>
+    <span class="divider-icon"><svg class="icon-sparkle" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l2.4 8.6L23 12l-8.6 2.4L12 23l-2.4-8.6L1 12l8.6-2.4L12 1z"/></svg></span>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- MUSIC -->
+  <div class="player-section section-fade">
+    <div class="player-wrap">
+      <div class="player-header-section">
+        <h2 class="en-title">Some music</h2>
+        <p class="ar-sub">مقطوعة موسيقية — اخترتها أنا لكِ</p>
+      </div>
+      <div class="player-box">
+        <div class="player-top">
+          <div class="player-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          </div>
+          <div class="player-info">
+            <p class="player-title-text">Some music</p>
+            <p class="player-desc" id="playerStatus" aria-live="polite">اختاري أغنية للبدء</p>
+          </div>
+          <p class="player-count" id="trackCount">0 SONGS</p>
+        </div>
+
+        <p class="playlist-label">PLAYLIST — اختاري ما يناسب لحظتكِ</p>
+        <div class="track-list" id="trackList" tabindex="0" role="region" aria-label="قائمة الأغاني؛ مرّري لرؤية المزيد">
+          <div class="track-empty">تُحمّل قائمة الأغاني…</div>
+        </div>
+
+        <div class="now-playing">
+          <div class="np-info">
+            <span class="np-title" id="npTitle">—</span>
+            <span class="np-time" id="npTime">0:00 / 0:00</span>
+          </div>
+          <div class="progress-bar" id="progressBar" role="slider" tabindex="0" aria-label="التقدم في الأغنية" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <div class="np-controls">
+            <div class="volume-wrap">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="color:var(--silver);opacity:0.45"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/></svg>
+              <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.8" aria-label="مستوى الصوت">
+            </div>
+            <div class="audio-actions" aria-label="خيارات الموسيقى">
+              <button class="ctrl-btn audio-action" id="stopBtn" type="button" aria-label="إيقاف الموسيقى وإعادتها للبداية">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="3.5"/></svg>
+              </button>
+            </div>
+            <div class="transport-controls" aria-label="التحكم في تشغيل الموسيقى">
+              <button class="ctrl-btn" id="prevBtn" type="button" aria-label="الأغنية السابقة">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 6l-6 6 6 6"/><path d="M11 6l-6 6 6 6"/></svg>
+              </button>
+              <button class="ctrl-btn play-pause" id="playPauseBtn" type="button" aria-label="تشغيل الموسيقى" aria-pressed="false">
+                <svg id="playIcon" width="15" height="15" viewBox="0 0 24 24"><polygon points="6,4 19,12 6,20" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
+                <svg id="pauseIcon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16" rx="2"/><rect x="14" y="4" width="4" height="16" rx="2"/></svg>
+              </button>
+              <button class="ctrl-btn" id="nextBtn" type="button" aria-label="الأغنية التالية">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 6l6 6-6 6"/><path d="M13 6l6 6-6 6"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOOD -->
+  <div class="section personal-section section-fade">
+    <div class="chapter-header"><h2>A little note for now</h2><p>اختاري شعوركِ الآن</p></div>
+    <div class="identity-panel">
+      <div class="mood-options" role="group" aria-label="اختيار الشعور">
+        <button class="mood-option" type="button" data-mood-key="happy">مبتسمة</button>
+        <button class="mood-option" type="button" data-mood-key="tired">متعبة</button>
+        <button class="mood-option" type="button" data-mood-key="encouragement">تحتاجين دفعة</button>
+      </div>
+      <p class="mood-answer" id="moodAnswer" aria-live="polite">مهما كان شعوركِ، هناك مساحة لكِ هنا.</p>
+    </div>
+  </div>
+
+  <!-- FUTURE AND WISHES -->
+  <div class="section personal-section section-fade">
+    <div class="future-card">
+      <p class="chapter-kicker">A NOTE FOR THE FUTURE</p>
+      <p>إذا قرأتِ هذه الصفحة بعد سنة، أتمنى أن تجدي نفسكِ أقرب إلى ما تريدين، وأكثر طمأنينة، وما زلتِ تملكين ذلك الهدوء الجميل نفسه.</p>
+    </div>
+    <div class="wishes-card">
+      <p class="chapter-kicker">WISHES FOR YOU</p>
+      <ul><li>راحة تشبهكِ ولا تتطلب منكِ تفسيراً.</li><li>نجاح يليق بذكائكِ وتعبكِ.</li><li>أشخاص يعرفون قيمة احترامكِ ولطفكِ.</li><li>سلام داخلي يرافقكِ أينما ذهبتِ.</li></ul>
+    </div>
+  </div>
+
+  <!-- INTERLUDE 3 -->
+  <div class="interlude section-fade">
+    <p class="interlude-en">"and maybe that's enough —<br>to have felt it honestly"</p>
+    <p class="interlude-ar">ربما يكفي أن يكون الشعور حقيقياً</p>
+  </div>
+
+  <!-- FINAL PAUSE -->
+  <div class="final-pause section-fade" id="finalPause">
+    <p class="final-pause-question">هل أكمل؟</p>
+    <p class="final-pause-note">بقيت رسالة صغيرة أخيرة</p>
+    <button class="continue-btn" id="continueBtn" type="button" aria-controls="envelopeSection" aria-expanded="false">نعم، أكمل <svg class="icon-sparkle" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1l2.4 8.6L23 12l-8.6 2.4L12 23l-2.4-8.6L1 12l8.6-2.4L12 1z"/></svg></button>
+  </div>
+
+  <!-- ENVELOPE -->
+  <div class="envelope-section section-fade" id="envelopeSection" hidden>
+    <div class="envelope-header">
+      <h2 class="en-title">One last thing</h2>
+      <p class="ar-sub">شيء أخير أريدكِ أن تعرفيه</p>
+    </div>
+    <div class="envelope-container">
+      <p class="envelope-prompt">بقي شيء أخير، لكن هذه المرة ليس اسماً فقط</p>
+      <button class="envelope-svg-wrap" id="envelopeWrap" type="button" aria-label="فتح الظرف لمعرفة صاحب الرسالة" aria-expanded="false" aria-controls="envelopeReveal">
+        <svg viewBox="0 0 280 180" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="60" width="260" height="110" rx="8" fill="#101A3A" stroke="rgba(139,168,208,0.18)" stroke-width="1"/>
+          <line x1="10" y1="170" x2="140" y2="115" stroke="rgba(139,168,208,0.08)" stroke-width="1"/>
+          <line x1="270" y1="170" x2="140" y2="115" stroke="rgba(139,168,208,0.08)" stroke-width="1"/>
+          <circle cx="140" cy="115" r="13" fill="#0A0F1E" stroke="rgba(139,168,208,0.22)" stroke-width="1"/>
+          <text x="140" y="120" text-anchor="middle" fill="rgba(139,168,208,0.45)" font-size="11" font-family="serif">♡</text>
+          <polygon class="env-flap" points="10,60 270,60 140,115" fill="#0D1530" stroke="rgba(139,168,208,0.13)" stroke-width="1"/>
+        </svg>
+        <p class="tap-hint">اضغطي لفتح الظرف</p>
+      </button>
+      <div class="envelope-reveal" id="envelopeReveal">
+        <div class="reveal-card">
+          <p class="envelope-message">صُنعت هذه الصفحة لأن بعض الصفات الجميلة تستحق أن تُقال بصوتٍ واضح.</p>
+          <p class="reveal-name">Haytham</p>
+          <p class="reveal-label">هو من صنع هذا كله، من أجلكِ</p>
+          <a href="https://instagram.com/ufl0ww" target="_blank" rel="noopener noreferrer" class="reveal-insta" aria-label="فتح حساب إنستغرام ufl0ww في نافذة جديدة">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            @ufl0ww
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Made with love — Only for Shahad</p>
+  </footer>
+</div>
+
+<div class="surprise" id="surprise" aria-hidden="true"></div>
+<audio id="audioPlayer" preload="metadata"></audio>
+
+<script src="app.js" defer></script>
+</body>
+</html>
+
